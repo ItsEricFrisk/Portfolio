@@ -28,7 +28,7 @@ const Projects = () => {
         }
     };
 
-    return <section className="w-screen h-auto pt-48">
+    return <section className="w-full h-auto pt-48">
         {projects.map((project, index) => (
             <motion.div 
             key={index} 
