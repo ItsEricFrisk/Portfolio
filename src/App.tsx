@@ -1,21 +1,19 @@
-import Hero from "./components/Hero/Hero"
-import About from "./components/About/About";
-import Stack from "./components/Stack/Stack";
-import Projects from "./components/Projects/Projects";
-import Socials from "./components/Socials/Socials";
+import Contact from "./components/Contact";
+import TechStack from "./components/TechStack";
+import About from "./components/About";
+import ProjectCards from "./components/ProjectCards";
+import { useScrollToTop } from "./hooks/useScrollToTop";
 
 function App() {
-
-
+  useScrollToTop();
   return (
-    <main className="w-screen flex flex-col bg-neutral-900 text-white">
-      <Hero />
-      <About /> 
-      <Stack />
-      <Projects />
-      <Socials />
+    <main className="w-screen px-10 flex flex-col items-center justify-center bg-light text-dark">
+      <About />
+      <TechStack />
+      <ProjectCards />
+      <Contact />
     </main>
-  )
+  );
 }
 
 export default App
