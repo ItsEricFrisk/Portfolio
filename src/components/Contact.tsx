@@ -72,6 +72,7 @@ const Contact = () => {
 
     if (!serviceId || !templateId || !publicKey) {
       setErrorMessage("Missing EmailJS environment variables");
+      console.error("Missing EmailJS environment variables");
       return;
     }
 

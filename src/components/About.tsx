@@ -59,7 +59,7 @@ const About = () => {
               </motion.div>
             </AnimatePresence>
           </div>
-          <div className="text-md md:text-lg mt-5 md:w-3/4 text-start justify-self-center flex flex-col gap-y-5">
+          <div className="text-md md:text-lg mt-5 w-full md:w-4/5 text-start justify-self-center flex flex-col gap-y-5">
             <p>
               I'm a passionate developer with a strong interest in creating
               user-friendly and visually appealing web applications. I'm
@@ -69,7 +69,7 @@ const About = () => {
             <p className="flex-wrap items-center gap-x-2 inline-block leading-8">
               Working on{" "}
               <span
-                className="px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
+                className="whitespace-nowrap px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
                 onClick={() => {
                   const element = document.getElementById("projects");
                   if (element) {
@@ -86,7 +86,7 @@ const About = () => {
               </span>{" "}
               outside of my studies helps me keep learning new technologies and expand my{" "}
               <span
-                className="px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
+                className="whitespace-nowrap px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
                 onClick={() => {
                   const element = document.getElementById("stack");
                   if (element) {
@@ -107,7 +107,7 @@ const About = () => {
               developer, or just want to discuss tech and creativity, feel free
               to{" "}
               <span
-                className="px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
+                className="whitespace-nowrap px-2 py-1 bg-dark rounded-md text-light cursor-pointer hover:bg-neutral-800"
                 onClick={() => {
                   const element = document.getElementById("contact");
                   if (element) {
