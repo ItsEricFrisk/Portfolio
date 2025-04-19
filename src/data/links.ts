@@ -1,4 +1,5 @@
 import receptit from '../assets/project-images/receptit.png';
+import whispr from "../assets/project-images/whispr.png"
 import adoreclo from '../assets/project-images/adoreclo.png';
 import interval from '../assets/project-images/interval-app.png';
 import wgg from '../assets/project-images/word-guessing-game.png';
@@ -21,6 +22,14 @@ import figmaIcon from '../assets/icons/figma-svgrepo-com.svg';
 
 // Projects
 export const projects = [
+  {
+    name: "Whispr",
+    live: "https://whispr-itsericfrisk.vercel.app",
+    description:
+      "Whispr is a real-time chat application where users can log in and interact with random people from around the world. Built using Supabase for backend authentication and PartyKit for seamless real-time communication.",
+    img: whispr,
+    techStack: ["React", "Next.js", "Tailwind", "PartyKit"],
+  },
   {
     name: "Receptit",
     github: "https://github.com/ItsEricFrisk/Receptit",
