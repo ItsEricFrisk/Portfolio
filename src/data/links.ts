@@ -3,6 +3,7 @@ import whispr from "../assets/project-images/whispr.png"
 import adoreclo from '../assets/project-images/adoreclo.png';
 import interval from '../assets/project-images/interval-app.png';
 import wgg from '../assets/project-images/word-guessing-game.png';
+import squareEscape from "../assets/project-images/square-escape.png"
 import keyboard from '../assets/project-images/keyboard-layout.jpeg';
 import htmlIcon from '../assets/icons/html-5-svgrepo-com.svg';
 import cssIcon from '../assets/icons/css3-svgrepo-com.svg';
@@ -47,6 +48,15 @@ export const projects = [
       "This project is a front-end development practice centered on enhancing my skills in web design and visual aesthetics. The primary goal is to create a visually appealing design, tailored to evoke the style and identity of a new clothing brand.",
     img: adoreclo,
     techStack: ["React", "Tailwind", "Framer Motion"],
+  },
+  {
+    name: "Square Escape",
+    live: "https://square-escape.vercel.app/",
+    github: "https://github.com/ItsEricFrisk/Square-Escape",
+    description:
+      "Square Escape is a challenging puzzle game where you control a square and must avoid moving obstacles.",
+    img: squareEscape,
+    techStack: ["TypeScript", "Tailwind", "Canvas"],
   },
   {
     name: "Interval",
