@@ -55,10 +55,10 @@ const ProjectCards = () => {
                 ? { height: 400 }
                 : { height: 200 }
               : hoveredIndex === index
-              ? { width: 500 }
+              ? { width: 300 }
               : { width: 150 }
           }
-          whileHover={!isMobile ? { width: 500, height: 400 } : {}}
+          whileHover={!isMobile ? { width: 450, height: 400 } : {}}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className={`relative bg-cover bg-center bg-no-repeat rounded-xl origin-bottom lg:origin-left p-4 flex items-center shadow-md text-light w-full xl:w-[150px] ${
             isMobile ? "min-h-[200px]" : "lg:h-[400px]"
@@ -71,15 +71,21 @@ const ProjectCards = () => {
           <div className="relative z-10 flex flex-col justify-between gap-y-5 h-full w-full text-light">
             <div className="flex items-center gap-5">
               <p className="text-xl text-shadow-lg">{`0${index + 1}`}</p>
-              <h2
+              <motion.h2
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity:
+                  hoveredIndex === index || tappedIndex === index ? 1 : 0,
+              }}
+              transition={{ delay: 0.2, ease: "easeInOut" }}
                 className={`${
                   hoveredIndex === index || tappedIndex === index
                     ? "flex"
                     : "hidden"
-                } text-xl font-semibold`}
+                } text-xl font-semibold whitespace-nowrap`}
               >
                 {project.name}
-              </h2>
+              </motion.h2>
             </div>
             <div className="flex flex-col gap-5">
               <motion.p
