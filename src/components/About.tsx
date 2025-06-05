@@ -6,7 +6,6 @@ const About = () => {
 
   const words = [
     "Frontend Developer",
-    "UI Designer",
     "Web Developer",
     "React Developer",
     "Creative Developer",
