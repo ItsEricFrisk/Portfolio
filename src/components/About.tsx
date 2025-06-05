@@ -93,7 +93,7 @@ const About = () => {
                     const elementPosition =
                       element.getBoundingClientRect().top + window.scrollY;
                     window.scrollTo({
-                      top: elementPosition - 50,
+                      top: elementPosition - 200,
                       behavior: "smooth",
                     });
                   }

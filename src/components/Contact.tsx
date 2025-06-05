@@ -99,7 +99,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-auto bg-light border-t-2 border-neutral-200 flex flex-col lg:flex-row items-start justify-center pt-10 lg:pt-24 py-4 px-4 md:px-16 gap-8 relative"
+      className="w-full h-auto border-t-2 border-neutral-200 flex flex-col lg:flex-row items-start justify-center pt-10 lg:pt-24 py-4 px-4 md:px-16 gap-8 relative"
     >
       <div className="w-full lg:w-1/2 flex flex-col gap-y-10">
         <p className="text-lg">
