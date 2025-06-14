@@ -92,10 +92,6 @@ const Contact = () => {
       );
   };
 
-  const handleClickToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <section
       id="contact"
@@ -169,13 +165,6 @@ const Contact = () => {
           Send
         </button>
       </form>
-      <button
-        onClick={handleClickToTop}
-        className="text-gray hover:text-dark cursor-pointer bg-transparent border-none absolute bottom-4 left-1/2 -translate-x-1/2"
-        aria-label="Scroll to top of page"
-      >
-        Back to top
-      </button>
     </section>
   );
 };

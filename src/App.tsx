@@ -9,7 +9,7 @@ function App() {
   useScrollToTop();
 
   return (
-    <main className="w-screen min-h-screen px-10 flex flex-col items-center bg-light text-dark">
+    <main className="w-screen min-h-screen px-10 flex flex-col items-center text-dark">
       <div className="md:w-2/5 flex flex-col items-start justify-center gap-y-12 mt-24">
         <Info />
         <JobExperienceList />

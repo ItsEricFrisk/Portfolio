@@ -47,6 +47,16 @@ const ProjectCards = () => {
               </div>
             </div>
             <p className="text-sm text-gray">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mt-2">
+              {project.techStack.map((tech, index) => (
+                <div
+                  className="px-1 py-1 border border-borderPrimary rounded-md text-xs text-gray"
+                  key={index}
+                >
+                  {tech}
+                </div>
+              ))}
+            </div>
           </li>
         ))}
       </ul>
