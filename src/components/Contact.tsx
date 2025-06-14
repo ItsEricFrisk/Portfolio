@@ -1,7 +1,7 @@
-import { contactLinks } from "../data/links";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FormErrors, FormData } from "../types";
+import TextField from "./TextField";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -99,65 +99,50 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-auto border-t-2 border-neutral-200 flex flex-col lg:flex-row items-start justify-center pt-10 lg:pt-24 py-4 px-4 md:px-16 gap-8 relative"
+      className="border-t-2 border-borderSecondary flex flex-col items-start justify-center pt-10 gap-8 relative"
     >
-      <div className="w-full lg:w-1/2 flex flex-col gap-y-10">
-        <p className="text-lg">
-          I'm always looking for new opportunities to collaborate and grow.
+      <TextField
+        styling="text-md"
+        text="I'm always looking for new opportunities to collaborate and grow.
           Whether you have a project in mind or just want to say hello, I'd love
-          to hear from you.
-        </p>
-        <div className="w-full flex gap-4 text-dark">
-          {contactLinks.map((link, index) => (
-            <div key={index}>
-              <a
-                href={link.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-2 py-1 bg-black rounded-md text-light cursor-pointer hover:bg-neutral-800"
-              >
-                {link.name}
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
+          to hear from you."
+      />
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="w-full lg:w-1/2 flex flex-col items-end gap-y-5 mb-10"
+        className="w-full flex flex-col items-end gap-y-5 mb-10"
       >
         <div className="w-full flex flex-col gap-y-2">
-        <div className="w-full">
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className={`w-full p-2 rounded-sm bg-neutral-50 border ${
-              errors.name ? "border-red-500" : "border-neutral-400"
-            }`}
-          />
-          {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-          )}
-        </div>
-        <div className="w-full">
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className={`w-full p-2 rounded-sm bg-neutral-50 border ${
-              errors.email ? "border-red-500" : "border-neutral-400"
-            }`}
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
-        </div>
+          <div className="">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className={`w-full p-2 rounded-sm border ${
+                errors.name ? "border-error" : "border-borderPrimary"
+              }`}
+            />
+            {errors.name && (
+              <p className="text-error text-sm mt-1">{errors.name}</p>
+            )}
+          </div>
+          <div className="w-full">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className={`w-full p-2 rounded-sm border ${
+                errors.email ? "border-error" : "border-borderPrimary"
+              }`}
+            />
+            {errors.email && (
+              <p className="text-error text-sm mt-1">{errors.email}</p>
+            )}
+          </div>
         </div>
         <div className="w-full">
           <textarea
@@ -165,28 +150,28 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className={`w-full p-2 rounded-sm bg-neutral-50 border ${
-              errors.message ? "border-red-500" : "border-neutral-400"
+            className={`w-full p-2 rounded-sm border ${
+              errors.message ? "border-error" : "border-borderPrimary"
             }`}
           />
           {errors.message && (
-            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            <p className="text-error text-sm mt-1">{errors.message}</p>
           )}
         </div>
         {successMessage && (
-          <p className="text-green-500 text-sm">{successMessage}</p>
+          <p className="text-success text-sm">{successMessage}</p>
         )}
-        {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
+        {errorMessage && <p className="text-error text-sm">{errorMessage}</p>}
         <button
           type="submit"
-          className="px-4 py-1 bg-black rounded-md text-light cursor-pointer hover:bg-neutral-800"
+          className=" px-4 py-2 rounded shadow-sm hover:bg-hoverBg border border-borderPrimary"
         >
           Send
         </button>
       </form>
       <button
         onClick={handleClickToTop}
-        className="text-neutral-500 hover:text-neutral-800 cursor-pointer mt-6 bg-transparent border-none absolute bottom-4 right-0"
+        className="text-gray hover:text-dark cursor-pointer bg-transparent border-none absolute bottom-4 left-1/2 -translate-x-1/2"
         aria-label="Scroll to top of page"
       >
         Back to top
