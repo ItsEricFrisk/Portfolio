@@ -1,4 +1,3 @@
-// Contact Links
 export const links = [
   {
     name: "Github",

@@ -1,5 +1,5 @@
 import Title from "../Title";
-import JobExperienceItem from "./JobExperienceItem";
+import ExperienceItem from "./ExperienceItem";
 import { experience } from "../../data";
 
 const JobExperienceList = () => {
@@ -8,7 +8,7 @@ const JobExperienceList = () => {
       <Title title="Experience" />
       <ul className="space-y-6">
         {experience.map((work, index) => (
-          <JobExperienceItem
+          <ExperienceItem
             key={index}
             company={work.company}
             time={work.time}

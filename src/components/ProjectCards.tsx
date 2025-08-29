@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../data";
 import Title from "./Title";
+import TextField from "./TextField";
 
 const ProjectCards = () => {
   const [visibleCount, setVisibleCount] = useState(3);
@@ -46,7 +47,7 @@ const ProjectCards = () => {
                 )}
               </div>
             </div>
-            <p className="text-sm text-gray">{project.description}</p>
+            <TextField text={project.description} styling="text-sm text-gray"/>
             <div className="flex flex-wrap gap-2 mt-2">
               {project.techStack.map((tech, index) => (
                 <div
