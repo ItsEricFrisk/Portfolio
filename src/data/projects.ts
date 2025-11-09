@@ -24,6 +24,13 @@ export const projects = [
     ],
   },
   {
+    name: "Shooting-tags",
+    github: "https://github.com/ItsEricFrisk/shooting-tags",
+    description:
+      "Shooting Tags is an interactive web-based game where players control a spaceship and must shoot every word (<span> elements) on the screen to cleanse the web page, combining classic arcade action with a creative twist.",
+    techStack: ["React", "TypeScript" , "Tailwind", "Canvas API"],
+  },
+  {
     name: "Adoréclo",
     github: "https://github.com/ItsEricFrisk/adoreclo",
     live: "https://adoreclo.vercel.app",
