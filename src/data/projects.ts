@@ -1,12 +1,13 @@
 // Projects
 export const projects = [
-  {
-    name: "Whispr",
-    live: "https://whispr-itsericfrisk.vercel.app",
-    description:
-      "Whispr is a real-time chat application where users can log in and interact with random people from around the world. Built using Supabase for backend authentication and PartyKit for seamless real-time communication.",
-    techStack: ["React", "Next.js", "Tailwind", "PartyKit"],
-  },
+  // No longer active on Supabase!!!
+  // {
+  //   name: "Whispr",
+  //   live: "https://whispr-itsericfrisk.vercel.app",
+  //   description:
+  //     "Whispr is a real-time chat application where users can log in and interact with random people from around the world. Built using Supabase for backend authentication and PartyKit for seamless real-time communication.",
+  //   techStack: ["React", "Next.js", "Tailwind", "PartyKit"],
+  // },
   {
     name: "Receptit",
     github: "https://github.com/ItsEricFrisk/Receptit",
