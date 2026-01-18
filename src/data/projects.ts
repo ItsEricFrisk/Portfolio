@@ -9,6 +9,13 @@ export const projects = [
   //   techStack: ["React", "Next.js", "Tailwind", "PartyKit"],
   // },
   {
+    name: "StudyTracker",
+    github: "https://github.com/ItsEricFrisk/StudyTracker",
+    description:
+      "A study session tracker built with React Native and Expo. Track your study time, view statistics by subject, monitor daily goals, and maintain study streaks. All data is stored locally using SQLite. Platform: iOS only",
+    techStack: ["React Native", "TypeScript" ,"Expo", "SQLite", "React Context"],
+  },
+  {
     name: "Receptit",
     github: "https://github.com/ItsEricFrisk/Receptit",
     live: "https://receptit.vercel.app",
@@ -29,7 +36,7 @@ export const projects = [
     github: "https://github.com/ItsEricFrisk/shooting-tags",
     description:
       "Shooting Tags is an interactive web-based game where players control a spaceship and must shoot every word (<span> elements) on the screen to cleanse the web page, combining classic arcade action with a creative twist.",
-    techStack: ["React", "TypeScript" , "Tailwind", "Canvas API"],
+    techStack: ["React", "TypeScript", "Tailwind", "Canvas API"],
   },
   {
     name: "Adoréclo",
