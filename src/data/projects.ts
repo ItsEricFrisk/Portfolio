@@ -1,19 +1,23 @@
-// Projects
 export const projects = [
-  // No longer active on Supabase!!!
-  // {
-  //   name: "Whispr",
-  //   live: "https://whispr-itsericfrisk.vercel.app",
-  //   description:
-  //     "Whispr is a real-time chat application where users can log in and interact with random people from around the world. Built using Supabase for backend authentication and PartyKit for seamless real-time communication.",
-  //   techStack: ["React", "Next.js", "Tailwind", "PartyKit"],
-  // },
+  {
+    name: "Blad",
+    github: "https://github.com/ItsEricFrisk/Blad",
+    description:
+      "Blad is a desktop Markdown editor built with JavaFX. It provides a clean and focused writing environment with a preview mode, allowing users to write Markdown and quickly switch views to see the rendered output. The goal of the project is to create a minimalistic and lightweight Markdown editor for simple tasks and fast reading.",
+    techStack: ["Java 21", "JavaFx", "Flexmark", "Maven"],
+  },
   {
     name: "StudyTracker",
     github: "https://github.com/ItsEricFrisk/StudyTracker",
     description:
       "A study session tracker built with React Native and Expo. Track your study time, view statistics by subject, monitor daily goals, and maintain study streaks. All data is stored locally using SQLite. Platform: iOS only",
-    techStack: ["React Native", "TypeScript" ,"Expo", "SQLite", "React Context"],
+    techStack: [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "SQLite",
+      "React Context",
+    ],
   },
   {
     name: "Receptit",
@@ -56,25 +60,4 @@ export const projects = [
 
     techStack: ["TypeScript", "Tailwind", "Canvas"],
   },
-  // {
-  //   name: "Interval",
-  //   github: "https://github.com/ItsEricFrisk/Interval-app",
-  //   description:
-  //     "A simple timer app where you can set a countdown with optional intervals and 5-minute breaks. Choose between three views: digital, analog, or a spelled-out countdown like Four minutes and twenty seconds.",
-  //   techStack: ["React", "Tailwind", "Framer Motion"],
-  // },
-  // {
-  //   name: "WGG",
-  //   github: "https://github.com/ItsEricFrisk/word-guess-game",
-  //   description:
-  //     "A word guessing game in Swedish where you enter each letter and guess what word it is based on the information you get.",
-  //   techStack: ["JavaScript", "SCSS", "HTML"],
-  // },
-  // {
-  //   name: "Keyboard Layout",
-  //   github: "https://github.com/ItsEricFrisk/keyboard-layout",
-  //   description:
-  //     "Keyboard layout that is interactive and responsive to keystrokes.",
-  //   techStack: ["React", "SCSS", "HTML"],
-  // },
 ];

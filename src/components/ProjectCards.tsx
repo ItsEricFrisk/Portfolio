@@ -4,14 +4,13 @@ import Title from "./Title";
 import TextField from "./TextField";
 
 const ProjectCards = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
+  const INITIAL_COUNT = 3;
+  const [showAll, setShowAll] = useState(false);
 
-  const showMore = () => {
-    setVisibleCount((prev) => prev + 3);
-  };
-
-  const visibleProjects = projects.slice(0, visibleCount);
-  const hasMore = visibleCount < projects.length;
+  const visibleProjects = projects.slice(
+    0,
+    showAll ? projects.length : INITIAL_COUNT,
+  );
 
   return (
     <section className="flex flex-col">
@@ -47,7 +46,7 @@ const ProjectCards = () => {
                 )}
               </div>
             </div>
-            <TextField text={project.description} styling="text-sm text-gray"/>
+            <TextField text={project.description} styling="text-sm text-gray" />
             <div className="flex flex-wrap gap-2 mt-2">
               {project.techStack.map((tech, index) => (
                 <div
@@ -61,12 +60,12 @@ const ProjectCards = () => {
           </li>
         ))}
       </ul>
-      {hasMore && (
+      {projects.length > INITIAL_COUNT && (
         <button
-          onClick={showMore}
+          onClick={() => setShowAll((prev) => !prev)}
           className="mt-5 px-4 py-2 rounded shadow-sm hover:bg-hoverBg border border-borderPrimary"
         >
-          Show more
+          {showAll ? "Show less" : "Show more"}
         </button>
       )}
     </section>
