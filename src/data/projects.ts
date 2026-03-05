@@ -4,7 +4,7 @@ export const projects = [
     github: "https://github.com/ItsEricFrisk/Blad",
     description:
       "Blad is a desktop Markdown editor built with JavaFX. It provides a clean and focused writing environment with a preview mode, allowing users to write Markdown and quickly switch views to see the rendered output. The goal of the project is to create a minimalistic and lightweight Markdown editor for simple tasks and fast reading.",
-    techStack: ["Java 21", "JavaFX", "Flexmark", "Maven"],
+    techStack: ["Java", "JavaFX", "Flexmark", "Maven"],
   },
   {
     name: "StudyTracker",
@@ -27,7 +27,6 @@ export const projects = [
       "This web application utilizes AI to extract, structure, and translate recipes from images. Users can upload a photo of a recipe, and the app automatically processes the text using OCR (Tesseract.js) and AI (OpenAI) to deliver a well structured recipe with clear ingredients and instructions.",
 
     techStack: [
-      "React",
       "Next.js",
       "Tailwind",
       "OpenAI",

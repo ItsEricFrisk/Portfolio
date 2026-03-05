@@ -25,7 +25,7 @@ const ProjectCards = () => {
                 {project.github && (
                   <a
                     href={project.github}
-                    className="text-sm underline text-gray hover:text-dark"
+                    className="text-sm underline text-links"
                     aria-label={`View ${project.name} on GitHub`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const ProjectCards = () => {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm underline text-gray hover:text-dark"
+                    className="text-sm underline text-links"
                     aria-label={`View ${project.name} live`}
                   >
                     Live

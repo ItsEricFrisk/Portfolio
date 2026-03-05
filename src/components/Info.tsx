@@ -3,7 +3,7 @@ import TextField from "../components/TextField";
 
 const Info = () => {
   const aboutText =
-    "A frontend developer with a passion for creating user-friendly and visually engaging web applications. I recently completed my studies in frontend development at Folkuniversitetet, and I have now started studying Java at Edugrade to further expand my knowledge and programming skills.";
+    "Software developer based in Sweden. I have a degree in frontend development and I'm currently working towards my backend degree, driven by a curiosity for how it all fits together.";
 
   return (
     <section className="flex flex-col gap-2">
@@ -15,7 +15,7 @@ const Info = () => {
             href={link.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-socials hover:underline"
+            className="text-links hover:underline"
           >
             {link.name}
           </a>

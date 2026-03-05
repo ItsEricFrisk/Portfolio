@@ -17,13 +17,13 @@ const TechStack = () => {
           {stack.map((item, index) => (
             <li
               key={index}
-              onClick={() => setActiveTag(stack[index])}
+              onClick={() => setActiveTag(item)}
               className={`
-        w-full text-center py-2 rounded-md cursor-pointer select-none
+        w-full text-center px-3 py-2 rounded-md cursor-pointer select-none
         transition-all duration-200
         ${
-          activeTag === stack[index]
-            ? "bg-white shadow-sm text-socials"
+          activeTag === item
+            ? "bg-white shadow-sm text-links"
             : "text-black/60 hover:text-black"
         }
       `}
@@ -41,6 +41,7 @@ const TechStack = () => {
               className="flex flex-col items-center w-full relative"
             >
               <motion.div
+              className="will-change-transform"
                 whileHover={{
                   scale: 1.2,
                   rotate: Math.floor(Math.random() * 20) - 10,
@@ -54,7 +55,7 @@ const TechStack = () => {
                   className="w-10 h-10"
                 />
               </motion.div>
-              <motion.div
+              <div
                 className={`absolute -top-8 px-3 py-2 text-nowrap text-sm bg-white shadow-md rounded border border-borderSecondary
                 ${
                   isHovering === index
@@ -64,7 +65,7 @@ const TechStack = () => {
                 transition-all duration-200`}
               >
                 {icon.name}
-              </motion.div>
+              </div>
             </div>
           ),
         )}
