@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "FlexBall",
+    live: "https://flexball.vercel.app/",
+    description:
+      "A puzzle game where players change CSS values to position platforms, guiding a  ball into its target.",
+    techStack: ["React", "TypeScript" ,"Matter.js"],
+  },
+  {
     name: "Blad",
     github: "https://github.com/ItsEricFrisk/Blad",
     description:
