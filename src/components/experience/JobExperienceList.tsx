@@ -5,7 +5,7 @@ import { experience } from "../../data";
 const JobExperienceList = () => {
   return (
     <section className="flex flex-col items-start">
-      <Title title="Experience" />
+      <Title title="Work experience" />
       <ul className="space-y-6">
         {experience.map((work, index) => (
           <ExperienceItem
