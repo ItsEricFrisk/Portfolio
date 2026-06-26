@@ -1,5 +1,6 @@
 import { links } from "../data";
 import TextField from "../components/TextField";
+import DarkModeButton from "./DarkModeButton";
 
 const Info = () => {
   const aboutText =
@@ -7,15 +8,18 @@ const Info = () => {
 
   return (
     <section className="flex flex-col gap-2">
-      <h1 className="text-4xl font-bold">Eric Frisk</h1>
-      <div className="flex gap-4">
+      <div className="flex justify-between">
+        <h1 className="text-5xl font-titan">Eric Frisk</h1>
+        <DarkModeButton />
+      </div>
+      <div className="flex gap-4 mb-4">
         {links.map((link, index) => (
           <a
             key={index}
             href={link.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-links hover:underline"
+            className="text-links hover:underline dark:text-dark-mode-links"
           >
             {link.name}
           </a>

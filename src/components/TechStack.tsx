@@ -13,9 +13,9 @@ const TechStack = () => {
     <section className="w-full">
       <Title title="Tech stack" />
       <div className="w-full flex items-center justify-center">
-        <ul className="w-full flex mb-10 p-1 bg-neutral-100 rounded-lg">
+        <ul className="w-full flex mb-10 p-1 bg-neutral-100 rounded-lg dark:bg-dark-mode-secondary-background">
           {stack.map((item, index) => (
-            <li
+            <button
               key={index}
               onClick={() => setActiveTag(item)}
               className={`
@@ -23,13 +23,13 @@ const TechStack = () => {
         transition-all duration-200
         ${
           activeTag === item
-            ? "bg-white shadow-sm text-links"
-            : "text-black/60 hover:text-black"
+            ? "bg-white dark:bg-dark shadow-sm text-links dark:text-dark-mode-links"
+            : "text-black/60 hover:text-black dark:text-dark-mode-text dark:hover:text-light"
         }
       `}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
-            </li>
+            </button>
           ))}
         </ul>
       </div>
@@ -52,11 +52,11 @@ const TechStack = () => {
                 <img
                   src={icon.icon}
                   alt={`${icon.name}-${index}`}
-                  className="w-10 h-10"
+                  className="w-14 h-14 bg-neutral-100 dark:bg-dark-mode-secondary-background rounded-md p-2"
                 />
               </motion.div>
               <div
-                className={`absolute -top-8 px-3 py-2 text-nowrap text-sm bg-white shadow-md rounded border border-borderSecondary
+                className={`absolute -top-8 px-3 py-2 text-nowrap text-sm bg-white shadow-md rounded border border-border-Secondary dark:bg-dark dark:border-dark-mode-secondary-background
                 ${
                   isHovering === index
                     ? "opacity-100 scale-100"

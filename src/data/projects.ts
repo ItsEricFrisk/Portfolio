@@ -1,10 +1,30 @@
+export const stackColors: Record<string, string> = {
+  Java: "text-orange-400",
+  JavaFX: "text-orange-400",
+  Flexmark: "text-orange-400",
+  Maven: "text-orange-400",
+  React: "text-blue-400",
+  "React Native": "text-blue-400",
+  "React Context": "text-blue-400",
+  TypeScript: "text-blue-400",
+  "Next.js": "text-blue-400",
+  Tailwind: "text-cyan-400",
+  "Framer Motion": "text-cyan-400",
+  "Canvas API": "text-cyan-400",
+  "Matter.js": "text-cyan-400",
+  Expo: "text-purple-400",
+  SQLite: "text-purple-400",
+  OpenAI: "text-green-400",
+  "Tesseract.js": "text-green-400",
+};
+
 export const projects = [
   {
     name: "FlexBall",
     live: "https://flexball.vercel.app/",
     description:
       "A puzzle game where players change CSS values to position platforms, guiding a  ball into its target.",
-    techStack: ["React", "TypeScript" ,"Matter.js"],
+    techStack: ["React", "TypeScript", "Matter.js"],
   },
   {
     name: "Blad",
@@ -48,22 +68,22 @@ export const projects = [
       "Shooting Tags is an interactive web-based game where players control a spaceship and must shoot every word (<span> elements) on the screen to cleanse the web page, combining classic arcade action with a creative twist.",
     techStack: ["React", "TypeScript", "Tailwind", "Canvas API"],
   },
-  {
-    name: "Adoréclo",
-    github: "https://github.com/ItsEricFrisk/adoreclo",
-    live: "https://adoreclo.vercel.app",
-    description:
-      "This project is a front-end development practice centered on enhancing my skills in web design and visual aesthetics. The primary goal is to create a visually appealing design, tailored to evoke the style and identity of a new clothing brand.",
+  // {
+  //   name: "Adoréclo",
+  //   github: "https://github.com/ItsEricFrisk/adoreclo",
+  //   live: "https://adoreclo.vercel.app",
+  //   description:
+  //     "This project is a front-end development practice centered on enhancing my skills in web design and visual aesthetics. The primary goal is to create a visually appealing design, tailored to evoke the style and identity of a new clothing brand.",
 
-    techStack: ["React", "Tailwind", "Framer Motion"],
-  },
-  {
-    name: "Square Escape",
-    live: "https://square-escape.vercel.app/",
-    github: "https://github.com/ItsEricFrisk/Square-Escape",
-    description:
-      "Square Escape is a challenging puzzle game where you control a square and must avoid moving obstacles.",
+  //   techStack: ["React", "Tailwind", "Framer Motion"],
+  // },
+  // {
+  //   name: "Square Escape",
+  //   live: "https://square-escape.vercel.app/",
+  //   github: "https://github.com/ItsEricFrisk/Square-Escape",
+  //   description:
+  //     "Square Escape is a challenging puzzle game where you control a square and must avoid moving obstacles.",
 
-    techStack: ["TypeScript", "Tailwind", "Canvas"],
-  },
+  //   techStack: ["TypeScript", "Tailwind", "Canvas"],
+  // },
 ];

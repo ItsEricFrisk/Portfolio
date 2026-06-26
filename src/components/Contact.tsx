@@ -95,7 +95,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="border-t-2 border-borderSecondary flex flex-col items-start justify-center pt-10 gap-8 relative"
+      className="border-t-2 border-border-Secondary dark:border-dark-mode-text flex flex-col items-start justify-center pt-10 gap-8 relative"
     >
       <TextField
         styling="text-md"
@@ -117,7 +117,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               className={`w-full p-2 rounded-sm border ${
-                errors.name ? "border-error" : "border-borderPrimary"
+                errors.name ? "border-error" : "border-border-Primary"
               }`}
             />
             {errors.name && (
@@ -132,7 +132,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               className={`w-full p-2 rounded-sm border ${
-                errors.email ? "border-error" : "border-borderPrimary"
+                errors.email ? "border-error" : "border-border-Primary"
               }`}
             />
             {errors.email && (
@@ -147,7 +147,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             className={`w-full p-2 rounded-sm border ${
-              errors.message ? "border-error" : "border-borderPrimary"
+              errors.message ? "border-error" : "border-border-Primary"
             }`}
           />
           {errors.message && (
@@ -160,7 +160,7 @@ const Contact = () => {
         {errorMessage && <p className="text-error text-sm">{errorMessage}</p>}
         <button
           type="submit"
-          className=" px-4 py-2 rounded shadow-sm hover:bg-hoverBg border border-borderPrimary"
+          className="px-4 py-2 rounded shadow-sm hover:bg-hover-background dark:hover:bg-hover-dark-mode-background border border-border-Primary cursor-pointer"
         >
           Send
         </button>

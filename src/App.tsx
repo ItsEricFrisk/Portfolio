@@ -4,13 +4,23 @@ import TechStack from "./components/TechStack";
 import JobExperienceList from "./components/experience/JobExperienceList";
 import Contact from "./components/Contact";
 import Info from "./components/Info";
+import { useEffect } from "react";
 
 function App() {
   useScrollToTop();
 
+  useEffect(() => {
+    document.documentElement.classList.toggle(
+      "dark",
+      localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches),
+    );
+  }, []);
+
   return (
-    <main className="w-screen min-h-screen px-10 flex flex-col items-center text-dark">
-      <div className="md:w-2/5 flex flex-col items-start justify-center gap-y-12 mt-24">
+    <main className="w-screen min-h-screen px-10 flex flex-col items-center text-dark dark:text-light dark:bg-dark">
+      <div className="lg:w-2/5 max-w-200 flex flex-col items-start justify-center gap-y-12 mt-24">
         <Info />
         <JobExperienceList />
         <TechStack />

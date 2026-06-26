@@ -1,7 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-titan: "Titan one", sans-serif;
+
+  --color-light: #fafafa;
+  --color-gray: #6b7280;
+  --color-hover-background: #eceaea;
+  --color-border-Primary: #a3a3a3;
+  --color-border-Secondary: #e5e5e5;
+  --color-links: #1d4ed8;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+
+  --color-dark: #090e0f;
+  --color-hover-dark-mode-background: #12181a;
+  --color-dark-mode-secondary-background: #12181a;
+  --color-dark-mode-links: #3e95fe;
+  --color-dark-mode-text: #a2a2a2;
+}
+
+/* titan-one-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/titan-one-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 body {
   overflow-x: hidden;
+}
+
+html.dark body {
+  background-color: #090e0f;
 }

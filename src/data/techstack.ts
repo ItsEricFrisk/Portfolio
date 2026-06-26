@@ -16,7 +16,6 @@ export const TechStackIcons = [
   { name: "Spring Boot", icon: "/icons/springboot.svg", tag: "backend" },
   { name: "Node.js", icon: "/icons/node.svg", tag: "backend" },
   { name: "Express.js", icon: "/icons/express.svg", tag: "backend" },
-  { name: "REST API", icon: "/icons/restapi.svg", tag: "backend" },
 
   // ===== Databases =====
   { name: "DynamoDB", icon: "/icons/dynamodb.svg", tag: "database" },
