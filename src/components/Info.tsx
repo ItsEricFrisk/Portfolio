@@ -9,7 +9,7 @@ const Info = () => {
   return (
     <section className="flex flex-col gap-2">
       <div className="flex justify-between">
-        <h1 className="text-5xl font-titan">Eric Frisk</h1>
+        <h1 className="text-6xl font-serif">Eric Frisk</h1>
         <DarkModeButton />
       </div>
       <div className="flex gap-4 mb-4">

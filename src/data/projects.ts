@@ -5,7 +5,6 @@ export const stackColors: Record<string, string> = {
   Maven: "text-orange-400",
   React: "text-blue-400",
   "React Native": "text-blue-400",
-  "React Context": "text-blue-400",
   TypeScript: "text-blue-400",
   "Next.js": "text-blue-400",
   Tailwind: "text-cyan-400",
@@ -38,13 +37,7 @@ export const projects = [
     github: "https://github.com/ItsEricFrisk/StudyTracker",
     description:
       "A study session tracker built with React Native and Expo. Track your study time, view statistics by subject, monitor daily goals, and maintain study streaks. All data is stored locally using SQLite. Platform: iOS only",
-    techStack: [
-      "React Native",
-      "TypeScript",
-      "Expo",
-      "SQLite",
-      "React Context",
-    ],
+    techStack: ["React Native", "TypeScript", "Expo", "SQLite"],
   },
   {
     name: "Receptit",
